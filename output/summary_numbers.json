@@ -1,0 +1,115 @@
+{
+ "twin_scenarios": 200,
+ "twin_inversions": 3000,
+ "twin_succeeded": 3000,
+ "twin_errors": 0,
+ "twin_common_n_contraction_max_abs_median": 0.01,
+ "chains_width": 108,
+ "chains_clim": 83,
+ "chains_per_continent": {
+  "eu": 4,
+  "na": 92,
+  "oc": 7,
+  "sa": 5
+ },
+ "sos_consensus_n": 89,
+ "sos_consensus_kge": "0.48 [0.10, 0.64]",
+ "sos_consensus_r": "0.85 [0.68, 0.92]",
+ "sos_consensus_beta": "1.05 [0.88, 1.39]",
+ "sos_comparison_same_chains": {
+  "clim_C0": {
+   "n": 59,
+   "ours": 0.5,
+   "sos": 0.45,
+   "ours_better_frac": 0.47
+  },
+  "clim_C2": {
+   "n": 44,
+   "ours": 0.5,
+   "sos": 0.54,
+   "ours_better_frac": 0.5
+  },
+  "clim_C3": {
+   "n": 59,
+   "ours": 0.19,
+   "sos": 0.45,
+   "ours_better_frac": 0.44
+  },
+  "width_C0": {
+   "n": 79,
+   "ours": -1.64,
+   "sos": 0.47,
+   "ours_better_frac": 0.09
+  },
+  "width_C2": {
+   "n": 63,
+   "ours": 0.23,
+   "sos": 0.53,
+   "ours_better_frac": 0.4
+  },
+  "width_C3": {
+   "n": 79,
+   "ours": -4.76,
+   "sos": 0.47,
+   "ours_better_frac": 0.08
+  }
+ },
+ "c2_applicability": {
+  "width": {
+   "chains": 108,
+   "not_applicable": 32,
+   "weakest_wh_r_median_applicable": 0.4,
+   "weakest_wh_r_median_not_applicable": -0.03,
+   "not_applicable_negative_wh": 17,
+   "common_n": 76,
+   "C0_kge": "-1.14 [-7.07, 0.19]",
+   "C2_kge": "0.18 [-0.61, 0.60]",
+   "C0_beta": "3.03 [1.52, 9.04]",
+   "C2_beta": "1.14 [0.65, 2.03]",
+   "C0_r": "0.91 [0.55, 0.97]",
+   "C2_r": "0.95 [0.81, 0.98]",
+   "C0_coverage": "0.22 [0.00, 0.73]",
+   "C2_coverage": "0.36 [0.02, 0.74]",
+   "C2_feasible_frac_median": 0.2487,
+   "C2_better_kge_frac": 0.82
+  },
+  "clim": {
+   "chains": 83,
+   "not_applicable": 28,
+   "weakest_wh_r_median_applicable": 0.41,
+   "weakest_wh_r_median_not_applicable": 0.04,
+   "not_applicable_negative_wh": 12,
+   "common_n": 55,
+   "C0_kge": "0.60 [0.32, 0.74]",
+   "C2_kge": "0.52 [0.22, 0.78]",
+   "C0_beta": "1.20 [0.96, 1.39]",
+   "C2_beta": "0.98 [0.69, 1.30]",
+   "C0_r": "0.94 [0.82, 0.98]",
+   "C2_r": "0.95 [0.86, 0.99]",
+   "C0_coverage": "0.90 [0.58, 1.00]",
+   "C2_coverage": "0.68 [0.37, 1.00]",
+   "C2_feasible_frac_median": 0.9999,
+   "C2_better_kge_frac": 0.56
+  }
+ },
+ "clim_ratio_median": 1.09,
+ "transfer": {
+  "pairs": 463,
+  "gauges": 463,
+  "rows_per_product": {
+   "consensus": 349,
+   "metroman": 399,
+   "momma": 322,
+   "neobam": 434,
+   "sad": 5,
+   "sic4dvar": 457
+  },
+  "pairs_per_continent": {
+   "eu": 28,
+   "na": 273,
+   "oc": 29,
+   "sa": 19
+  },
+  "hydraulically_consistent_frac": 0.6446991404011462
+ }
+}

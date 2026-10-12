@@ -1,0 +1,452 @@
+{
+ "table1": {
+  "title": "Transfer of Prior Error in the Unconstrained SWOT Discharge Product (Version 3) at Gauged Reaches",
+  "columns": [
+   "Product",
+   "n",
+   "Theil–Sen slope",
+   "LS slope (95% CI)",
+   "Log slope",
+   "Median Δ (95% CI)",
+   "p",
+   "Improved, % (95% CI)",
+   "Median r"
+  ],
+  "rows": [
+   [
+    "Consensus",
+    "348",
+    "0.90",
+    "1.54 (0.91, 3.10)",
+    "0.76",
+    "0.000 (−0.001, 0.009)",
+    "0.15",
+    "49 (44, 54)",
+    "0.77"
+   ],
+   [
+    "MOMMA",
+    "322",
+    "1.00",
+    "1.03 (0.97, 1.09)",
+    "0.83",
+    "0.000 (0.000, 0.000)",
+    "0.29",
+    "51 (45, 57)",
+    "0.81"
+   ],
+   [
+    "SIC4DVar",
+    "454",
+    "0.92",
+    "0.67 (0.52, 0.79)",
+    "0.76",
+    "−0.026 (−0.039, −0.018)",
+    "< 0.001",
+    "63 (58, 67)",
+    "0.79"
+   ],
+   [
+    "MetroMan",
+    "398",
+    "0.79",
+    "1.05 (0.77, 1.86)",
+    "0.68",
+    "0.048 (0.012, 0.077)",
+    "< 0.001",
+    "44 (39, 49)",
+    "0.64"
+   ],
+   [
+    "neoBAM",
+    "433",
+    "0.82",
+    "0.98 (0.90, 1.08)",
+    "0.88",
+    "0.021 (−0.001, 0.053)",
+    "0.02",
+    "46 (42, 51)",
+    "0.19"
+   ]
+  ],
+  "note": "n: gauge–reach pairs with ≥ 10 matched overpasses and a prior value. Slopes: nbias regressed on nbias_prior (Equations 1–2) by Theil–Sen and least squares (LS), and log(mean Q_est/mean Q_obs) on log(Q_prior/mean Q_obs) by least squares. Δ: paired difference |nbias| − |nbias_prior| (Equation 3); p: two-sided Wilcoxon signed-rank test; Improved: pairs with Δ < 0. Intervals: bootstrap over gauges (2000 resamples). Median r: correlation with gauge discharge on matched days. LS slopes in the synthetic benchmark of Frasson et al. (2021): MetroMan 0.73, BAM 0.85, HiVDI 0.84, SAD 0.53."
+ },
+ "table2": {
+  "title": "Controlled Inversion on Gauged Three-Reach Chains: Median Skill at the Gauged Reach",
+  "columns": [
+   "Prior",
+   "Constraint",
+   "n",
+   "KGE",
+   "r",
+   "β",
+   "Coverage"
+  ],
+  "rows": [
+   [
+    "Width",
+    "C0",
+    "108",
+    "−1.14 [−7.07, 0.18]",
+    "0.86 [0.41, 0.96]",
+    "3.03 [1.52, 9.03]",
+    "0.27 [0.00, 0.80]"
+   ],
+   [
+    "Width",
+    "C2 ᵃ",
+    "76",
+    "0.18 [−0.61, 0.60]",
+    "0.95 [0.81, 0.98]",
+    "1.14 [0.65, 2.03]",
+    "0.36 [0.02, 0.74]"
+   ],
+   [
+    "Width",
+    "C0, C2 chains ᵃ",
+    "76",
+    "−1.14 [−7.07, 0.19]",
+    "0.91 [0.55, 0.97]",
+    "3.03 [1.52, 9.04]",
+    "0.22 [0.00, 0.73]"
+   ],
+   [
+    "Width",
+    "C3",
+    "108",
+    "−3.10 [−15.90, −0.61]",
+    "0.82 [0.28, 0.95]",
+    "5.01 [2.54, 17.89]",
+    "0.00 [0.00, 0.09]"
+   ],
+   [
+    "Climatology",
+    "C0",
+    "83",
+    "0.54 [0.01, 0.73]",
+    "0.91 [0.60, 0.98]",
+    "1.22 [0.98, 1.53]",
+    "0.89 [0.42, 1.00]"
+   ],
+   [
+    "Climatology",
+    "C2 ᵃ",
+    "55",
+    "0.52 [0.22, 0.78]",
+    "0.95 [0.86, 0.99]",
+    "0.98 [0.69, 1.30]",
+    "0.68 [0.37, 1.00]"
+   ],
+   [
+    "Climatology",
+    "C0, C2 chains ᵃ",
+    "55",
+    "0.60 [0.32, 0.74]",
+    "0.94 [0.82, 0.98]",
+    "1.20 [0.96, 1.39]",
+    "0.90 [0.58, 1.00]"
+   ],
+   [
+    "Climatology",
+    "C3",
+    "83",
+    "0.18 [−0.69, 0.58]",
+    "0.88 [0.60, 0.97]",
+    "1.54 [1.06, 2.55]",
+    "0.36 [0.10, 0.82]"
+   ],
+   [
+    "SWOT consensus",
+    "–",
+    "89",
+    "0.48 [0.10, 0.64]",
+    "0.85 [0.68, 0.92]",
+    "1.05 [0.88, 1.39]",
+    "–"
+   ],
+   [
+    "Width",
+    "C2, b ∈ [0.05, 0.9]",
+    "38",
+    "0.30",
+    "0.94",
+    "1.30",
+    "0.38"
+   ],
+   [
+    "Climatology",
+    "C2, b ∈ [0.05, 0.9]",
+    "28",
+    "0.47",
+    "0.95",
+    "1.09",
+    "0.45"
+   ],
+   [
+    "Width",
+    "C2, σW ≥ 15%",
+    "76",
+    "0.09",
+    "0.94",
+    "1.49",
+    "0.48"
+   ],
+   [
+    "Climatology",
+    "C2, σW ≥ 15%",
+    "55",
+    "0.55",
+    "0.95",
+    "1.06",
+    "0.90"
+   ]
+  ],
+  "note": "Prior: width-based (Moody and Troutman, 2002) or gauge climatology 2013–2022. Constraint: C0 priors only; C2 + AHG constraint with exponent bounds; C3 + mass conservation. Main runs: median [interquartile range]; sensitivity runs (last four rows): median. β: ratio of means; Coverage: fraction of gauge values inside the posterior 90% interval. The SWOT consensus row uses the chains for which the product had at least 10 matched overpasses. Sensitivity runs change one setting of the main run (AHG exponent in (0, 1), width error bounded below at 5%). ᵃ C2 could not be applied to 32 of 108 chains (width-based prior) and 28 of 83 (climatology prior), in which no value of A0 gave an exponent in (0, 1) for at least one reach; C2 statistics and the paired C0 row refer to the remaining chains."
+ },
+ "tableS1": {
+  "title": "Number of SWORD Reaches With Discharge From Each Algorithm in the SoS Discharge Product (Version 3, Unconstrained)",
+  "columns": [
+   "Continent",
+   "Reaches",
+   "Consensus",
+   "MetroMan",
+   "neoBAM",
+   "HiVDI",
+   "MOMMA",
+   "SAD",
+   "SIC4DVar"
+  ],
+  "rows": [
+   [
+    "Africa",
+    "20,618",
+    "7,970",
+    "7,434",
+    "10,061",
+    "0",
+    "6,832",
+    "922",
+    "11,085"
+   ],
+   [
+    "Asia",
+    "97,690",
+    "41,162",
+    "31,177",
+    "45,352",
+    "0",
+    "28,196",
+    "1,228",
+    "45,779"
+   ],
+   [
+    "Europe",
+    "30,363",
+    "9,399",
+    "7,725",
+    "11,370",
+    "0",
+    "6,654",
+    "167",
+    "12,050"
+   ],
+   [
+    "North America",
+    "38,048",
+    "13,304",
+    "10,861",
+    "15,589",
+    "0",
+    "9,122",
+    "218",
+    "16,726"
+   ],
+   [
+    "Oceania",
+    "14,453",
+    "4,509",
+    "3,608",
+    "5,290",
+    "0",
+    "3,399",
+    "411",
+    "6,073"
+   ],
+   [
+    "South America",
+    "40,680",
+    "17,990",
+    "15,263",
+    "20,381",
+    "0",
+    "13,427",
+    "970",
+    "22,831"
+   ],
+   [
+    "Total",
+    "241,852",
+    "94,334",
+    "76,068",
+    "108,043",
+    "0",
+    "67,630",
+    "3,916",
+    "114,544"
+   ]
+  ],
+  "note": "A reach is counted if its series contains at least one positive value. Script 12c."
+ },
+ "tableS2": {
+  "title": "MCMC Diagnostics for 20 Randomly Selected Chains and Sensitivity to Chain Length",
+  "columns": [
+   "Prior",
+   "Constraint",
+   "n",
+   "Acceptance",
+   "τ (steps)",
+   "Steps/τ",
+   "ESS",
+   "|ΔKGE|",
+   "|Δβ|",
+   "|Δ contraction|"
+  ],
+  "rows": [
+   [
+    "Climatology",
+    "C2",
+    "12",
+    "0.52",
+    "58",
+    "26",
+    "617",
+    "0.011",
+    "0.016",
+    "0.025"
+   ],
+   [
+    "Climatology",
+    "C3",
+    "15",
+    "0.51",
+    "54",
+    "28",
+    "664",
+    "0.007",
+    "0.011",
+    "0.024"
+   ],
+   [
+    "Width based",
+    "C2",
+    "17",
+    "0.51",
+    "59",
+    "25",
+    "611",
+    "0.033",
+    "0.038",
+    "0.027"
+   ],
+   [
+    "Width based",
+    "C3",
+    "20",
+    "0.51",
+    "58",
+    "26",
+    "621",
+    "0.133",
+    "0.133",
+    "0.030"
+   ]
+  ],
+  "note": "Main setting: 24 walkers, 2500 steps, 1000 burn-in. τ: largest integrated autocorrelation time over parameters (emcee); Steps/τ: post-burn-in steps divided by τ; ESS: effective sample size, walkers × steps/τ. |Δ|: median absolute difference between the main setting and a long run (7000 steps, 2000 burn-in) for KGE, β and the contraction of the common friction scale. Medians over chains. Scripts 08d and 08e."
+ },
+ "tableS3": {
+  "title": "Prior-Error Transfer by Continent, River Width and Hydraulic Consistency",
+  "columns": [
+   "Subset",
+   "Consensus",
+   "MOMMA",
+   "SIC4DVar",
+   "MetroMan",
+   "neoBAM"
+  ],
+  "rows": [
+   [
+    "North America",
+    "0.88 / 50 (272)",
+    "1.00 / 52 (253)",
+    "0.93 / 65 (356)",
+    "0.75 / 47 (320)",
+    "0.76 / 46 (344)"
+   ],
+   [
+    "Europe",
+    "1.03 / 32 (28)",
+    "1.00 / 45 (29)",
+    "0.93 / 44 (36)",
+    "1.13 / 15 (34)",
+    "0.82 / 48 (33)"
+   ],
+   [
+    "Oceania",
+    "1.06 / 55 (29)",
+    "1.00 / 57 (23)",
+    "0.83 / 69 (39)",
+    "0.86 / 59 (27)",
+    "0.96 / 52 (33)"
+   ],
+   [
+    "South America",
+    "0.72 / 53 (19)",
+    "1.00 / 35 (17)",
+    "0.83 / 57 (23)",
+    "1.25 / 18 (17)",
+    "0.27 / 35 (23)"
+   ],
+   [
+    "Width < 200 m",
+    "0.91 / 47 (204)",
+    "1.00 / 48 (178)",
+    "0.93 / 60 (252)",
+    "0.79 / 41 (215)",
+    "0.87 / 44 (242)"
+   ],
+   [
+    "Width 200–500 m",
+    "0.86 / 46 (39)",
+    "1.00 / 49 (47)",
+    "0.87 / 72 (60)",
+    "0.85 / 48 (56)",
+    "0.62 / 52 (58)"
+   ],
+   [
+    "Width > 500 m",
+    "0.71 / 65 (17)",
+    "1.00 / 61 (18)",
+    "0.77 / 77 (26)",
+    "0.81 / 56 (27)",
+    "0.57 / 41 (27)"
+   ],
+   [
+    "Hydraulically consistent",
+    "0.90 / 48 (225)",
+    "1.00 / 49 (215)",
+    "0.92 / 62 (287)",
+    "0.79 / 46 (249)",
+    "0.84 / 46 (278)"
+   ],
+   [
+    "Hydraulically inconsistent",
+    "0.88 / 44 (32)",
+    "1.00 / 54 (24)",
+    "0.88 / 70 (46)",
+    "0.88 / 32 (44)",
+    "0.74 / 43 (46)"
+   ]
+  ],
+  "note": "Each cell: Theil–Sen slope / percentage of pairs improving on the prior (number of pairs). Subsets with fewer than 8 pairs are not shown. Width: median SWOT reach width. Hydraulic consistency (positive WSE–width correlation) requires at least 5 quality-controlled observations."
+ }
+}

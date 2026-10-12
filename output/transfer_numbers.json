@@ -1,0 +1,19 @@
+{
+ "pairs": 463,
+ "gauges": 463,
+ "rows_per_product": {
+  "consensus": 349,
+  "metroman": 399,
+  "momma": 322,
+  "neobam": 434,
+  "sad": 5,
+  "sic4dvar": 457
+ },
+ "pairs_per_continent": {
+  "eu": 28,
+  "na": 273,
+  "oc": 29,
+  "sa": 19
+ },
+ "hydraulically_consistent_frac": 0.6446991404011462
+}
